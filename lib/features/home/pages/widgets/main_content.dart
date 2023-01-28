@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MainContent extends StatelessWidget {
   const MainContent({
@@ -18,22 +19,22 @@ class MainContent extends StatelessWidget {
       children: <Widget>[
         Container(
           padding: const EdgeInsets.all(8),
-          child: const Text('One'),
+          child: Text(AppLocalizations.of(context).one),
           color: Theme.of(context).colorScheme.secondary,
         ),
         Container(
           padding: const EdgeInsets.all(8),
-          child: const Text('Two'),
+          child: Text(AppLocalizations.of(context).two),
           color: Theme.of(context).colorScheme.secondary,
         ),
         Container(
           padding: const EdgeInsets.all(8),
-          child: const Text('Three'),
+          child: Text(AppLocalizations.of(context).three),
           color: Theme.of(context).colorScheme.secondary,
         ),
         Container(
           padding: const EdgeInsets.all(8),
-          child: const Text('Four'),
+          child: Text(AppLocalizations.of(context).four),
           color: Theme.of(context).colorScheme.secondary,
         ),
       ],
